@@ -27,19 +27,16 @@ GROUP BY film_id;
 
 SELECT count(last_name) AS "Total With Last Name ending in 'es'" 
 FROM customer
-WHERE last_name LIKE '%es'
-
-SELECT *
-FROM payment
+WHERE last_name LIKE '%es';
 
 SELECT amount 
 FROM payment
 WHERE customer_id BETWEEN 380 AND 430
-GROUP BY amount  HAVING count(amount) > 250
+GROUP BY amount  HAVING count(amount) > 250;
 
 SELECT count(DISTINCT rating) AS "Total rating categories" 
 FROM film;
 
 SELECT rating, count(rating) AS "Total movies for rating" 
 FROM film
-GROUP BY rating 
+GROUP BY rating;
