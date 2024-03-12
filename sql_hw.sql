@@ -37,9 +37,6 @@ FROM payment
 WHERE customer_id BETWEEN 380 AND 430
 GROUP BY amount  HAVING count(amount) > 250
 
-SELECT *
-FROM film;
-
 SELECT count(DISTINCT rating) AS "Total rating categories" 
 FROM film;
 
